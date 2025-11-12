@@ -6,27 +6,62 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 id="title">Heaven Official's Blessing Fan Survey</h1>
-    <p id="description">Welcome to a fake  (unofficial) fan survey to collect useful data on the fans and readers of TGCF to send up to Ling Wen for the heavenly official database! Yipee! </p>
+    <h1 id="title">Heaven Official's Blessing Fan Survey</h1><br>
+    <p id="description">Welcome to a fake (unofficial) fan survey to collect useful data on the fans and readers of TGCF to send up to Ling Wen for the heavenly official database! Yipee! </p><br>
    
 
 
+   
    <form id="survey-form">
-     <label for="username">
-       Enter your Discord username: <input id="name" required>
+     <label for="username" id="name-label">
+       Enter your Discord name: <input id="name" placeholder="discord username" required>
+   </label><br>
+   <label for="email" id="email-label" >
+       Enter your Discord email: <input id="email" type="email" placeholder="daodejing@heavenlyarray.com" required>
+   </label><br>
+  <label for="number" id="number-label">
+       Enter your favorite arc number (1-5): <input type="number" id="number" placeholder=4 min=1 max=5 required>
+   </label><br>
+
+<label for="tale-calamity" id="favorite-tale-calamity">
+  <p>What is your favorite of the four great tales OR four great calamities. </p>
+       <select id="dropdown">
+         <option value="Crimson Rain Sought Flower">Crimson Rain Sought Flower - Hua Cheng</option>
+        <option value="Ship Sinking Black Water">Ship Sinking Black Water - He Xuan</option>
+        <option value="Night Touring Green Lantern">Night Touring Green Lantern - Qi Rong</option>
+        <option value="White No-Face">White No-Face - Bai Wuxiang</option>
+        <option value="The God-Pleasing Crown Prince">The God-Pleasing Crown Prince - Xie Lian</option>
+        <option value="The Young Lord Who Poured Wine">The Young Lord Who Poured Wine - Shi Qingxuan</option>
+        <option value="The Princess Who Slit Her Throat">The Princess Who Slit Her Throat - Yushi Huang</option>
+        <option value="The General Who Broke His Sword">The General Who Broke His Sword - Pei Ming</option>
+         </select>
+   </label><br>
+
+   <label for="method">
+    <p> What was your first method of consuming TGCF? </p><br>
+     <label><input name="method" value="novel" id="method" type="radio"> Fan Translated/Original Novel </label><br>
+     <label> 
+       <input name="method"  value="novel2" id="method" type="radio">Seven Seas Translated Novel</label><br>
+     <label>
+      <input name="method" value="ad" id="method" type="radio">Audio Drama</label><br>
+      <label><input name="method" value="donghua" id="method" type="radio">Donghua (anime)</label><br>
+      <label><input name="method"  value="manhua" id="method" type="radio"> Manhua (comics) </label><br>
    </label>
-   <label for="email">
-       Enter your Discord email: <input id="email" type="email" required
-       >
-   </label>
-   <label for="username">
-       Enter your Discord username: <input id="name" required>
-   </label>
 
 
-
-
+  <label for="danmei series">
+    <p>What other popular danmei series have you read?</p> <br>
+    <input type="checkbox" value="mdzs"> Mo Dao Zu Shi/Grandmaster of Demonic Cultivation <br>
+    <input type="checkbox" value="svsss"> The Scum Villain's Self-Saving System <br>
+    <input type="checkbox" value="erha"> The Huskey and His White Cat Shizun/Erha <br>
+    <input type="checkbox" value="lm"> Little Mushroom <br>
+    <input type="checkbox" value="qq"> Thousand Autumns/Qian Qiu <br>
+    <input type="checkbox" value="cfc"> Case File Compendium/Bing An Ban <br>
+   <p> Why do you love TGCF/Heaven Official's Blessing? </p><br>
+    <textarea>Hualian 4eva</textarea> <br>
+     <input type="submit" value="Submit" />
    </form>
    
+
   </body>
 </html>
